@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DeepGuard Well Integrity | Real-Time Well Integrity Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DeepGuard is a modern well integrity platform that calculates MAASP, tracks annulus pressures, manages well barriers, and visualizes wells with interactive schematics." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- =================== NAVBAR =================== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-mark">DG</span>
+        <span class="logo-text">DeepGuard<span class="logo-sub">Well Integrity</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#product">Platform</a>
+        <a href="#diagrams">Well Diagrams</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="nav-cta">Request Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =================== HERO =================== -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Modern Well Integrity, Built for Real Operations.</h1>
+          <p>
+            DeepGuard turns fragmented pressure readings, spreadsheets, and static schematics
+            into a live well integrity cockpit: MAASP, annulus pressures, barrier status,
+            and well diagrams in one place.
+          </p>
+          <div class="hero-actions">
+            <a href="#product" class="btn-primary">Explore the Platform</a>
+            <a href="#contact" class="btn-secondary">Book a Demo</a>
+          </div>
+          <p class="hero-footnote">
+            Designed around ISO/TS 16530-2 and typical operator well integrity management systems (WIMS).<br />
+            AI/ML predictive modules are planned for a future release.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span>Well A-15 – Integrity Snapshot</span>
+              <span class="chip chip-green">Overall: GREEN</span>
+            </div>
+            <div class="hero-card-grid">
+              <div class="card-mini">
+                <span class="card-mini-label">A-Annulus</span>
+                <span class="card-mini-value">180 bar</span>
+                <span class="card-mini-sub">78% of MAASP</span>
+              </div>
+              <div class="card-mini">
+                <span class="card-mini-label">B-Annulus</span>
+                <span class="card-mini-value">52 bar</span>
+                <span class="card-mini-sub">43% of MAASP</span>
+              </div>
+              <div class="card-mini">
+                <span class="card-mini-label">Tubing Head</span>
+                <span class="card-mini-value">220 bar</span>
+                <span class="card-mini-sub">Within limits</span>
+              </div>
+              <div class="card-mini">
+                <span class="card-mini-label">Tasks</span>
+                <span class="card-mini-value">2 Open</span>
+                <span class="card-mini-sub">Annulus review; SSSV test</span>
+              </div>
+            </div>
+            <div class="hero-schematic-fake">
+              <div class="depth-scale">
+                <span>0 m</span>
+                <span>1000 m</span>
+                <span>2000 m</span>
+                <span>3000 m</span>
+              </div>
+              <div class="well-column">
+                <div class="well-casing outer"></div>
+                <div class="well-casing mid"></div>
+                <div class="well-casing tubing"></div>
+                <div class="well-packer"></div>
+                <div class="well-sssv"></div>
+                <div class="well-label">Interactive schematic<br />powered by D3 (future state)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== PRODUCT SECTION =================== -->
+    <section id="product" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>The DeepGuard Well Integrity Platform</h2>
+          <p>
+            A single pane of glass for wells: MAASP calculations, annulus surveillance, barrier status,
+            and integrity tasks – ready to plug in your existing data.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <h3>Annulus & MAASP Engine</h3>
+            <p>
+              Define annuli (A/B/C/D), critical points, fluid gradients and limits. DeepGuard computes MAASP,
+              utilisation and status (GREEN/AMBER/RED) using standardised logic you control.
+            </p>
+            <ul>
+              <li>Multi-point MAASP calculation per annulus</li>
+              <li>Configurable safety factors & triggers</li>
+              <li>Cached results exposed via API</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3>Barrier & Envelope Management</h3>
+            <p>
+              Map all well barrier elements – packer, SSSV, valves, tree, cement – and see primary/secondary
+              envelopes with live integrity status.
+            </p>
+            <ul>
+              <li>Barrier element registry</li>
+              <li>Test results & leak acceptance</li>
+              <li>Envelope visualisation (future D3)</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3>Tasks, Alerts & Governance</h3>
+            <p>
+              Turn measurements into action: DeepGuard generates integrity review tasks, test reminders,
+              and escalations when annuli approach MAASP.
+            </p>
+            <ul>
+              <li>Rule-based alerting (90% / 100% MAASP)</li>
+              <li>Per-well task list & audit trail</li>
+              <li>ISO-style reporting (future enhancement)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== EMBEDDED APPLICATION PLACEHOLDER =================== -->
+    <section id="app-section" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>DeepGuard Web Application</h2>
+          <p>
+            Below is the container where the core well integrity application will run.
+            Another AI agent will generate the full frontend & backend; it should mount
+            into the container with ID <code>well-integrity-app-root</code>.
+          </p>
+        </div>
+
+        <!--
+          IMPORTANT:
+          Other AI (that builds the functional app) should treat the div below
+          as its root mounting point (e.g., ReactDOM.createRoot('#well-integrity-app-root')).
+        -->
+        <div id="well-integrity-app-shell">
+          <div class="app-shell-header">
+            <div>
+              <h3>Application Shell</h3>
+              <p>
+                This is a placeholder. The fully functional Well Integrity App will be
+                injected here by a separate codebase or bundle.
+              </p>
+            </div>
+            <span class="chip chip-outline">App Mount Point</span>
+          </div>
+
+          <div id="well-integrity-app-root" class="app-placeholder">
+            <p>
+              <strong>Waiting for application bundle...</strong><br />
+              Once the application is built by another AI, it should mount its UI here,
+              using the backend APIs (MAASP calculations, integrity summary, tasks).
+            </p>
+            <p class="small-text">
+              Suggested: React/Next.js or any SPA, mounted into this element.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== DIAGRAMS SECTION =================== -->
+    <section id="diagrams" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>Beautiful Well Integrity Diagrams</h2>
+          <p>
+            DeepGuard is designed to render interactive well schematics using D3.js – casings, tubing,
+            cement, annuli and barrier elements. The diagrams update as MAASP and integrity status change.
+          </p>
+        </div>
+
+        <div class="diagrams-layout">
+          <div class="diagram-info">
+            <h3>What the diagrams will show</h3>
+            <ul>
+              <li>All tubular strings with depths and sizes</li>
+              <li>Cement tops, zonal isolation, and weak formations</li>
+              <li>Annuli with live pressure & MAASP utilisation colours</li>
+              <li>Barrier elements: packer, SSSV, wellhead, X-mas tree valves</li>
+              <li>Hover-based tooltips: test history, status, anomaly notes</li>
+            </ul>
+            <p>
+              The frontend D3 engine will consume JSON from an endpoint (e.g.
+              <code>/wells/{id}/schematic</code>) and render the complete vertical well profile.
+            </p>
+          </div>
+
+          <div class="diagram-preview">
+            <div class="diagram-frame">
+              <div class="diagram-header">
+                <span>Well A-15 – Schematic Preview</span>
+                <span class="chip chip-amber">Prototype</span>
+              </div>
+              <div class="diagram-body">
+                <div class="diagram-depth">
+                  <span>0 m</span>
+                  <span>500 m</span>
+                  <span>1500 m</span>
+                  <span>2500 m</span>
+                  <span>3000 m</span>
+                </div>
+                <div class="diagram-well">
+                  <div class="diagram-casing outer"></div>
+                  <div class="diagram-casing middle"></div>
+                  <div class="diagram-casing inner"></div>
+                  <div class="diagram-annulus annulus-a"></div>
+                  <div class="diagram-annulus annulus-b"></div>
+                  <div class="diagram-packer"></div>
+                  <div class="diagram-sssv"></div>
+                  <div class="diagram-label">
+                    Planned D3.js schematic<br />
+                    with interactive barrier view
+                  </div>
+                </div>
+              </div>
+              <div class="diagram-footer">
+                Future work: replace this static preview with D3.js charts consuming live backend data.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== ROADMAP SECTION =================== -->
+    <section id="roadmap" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>Product Roadmap</h2>
+          <p>
+            DeepGuard starts with deterministic calculations and clear dashboards. AI/ML is
+            reserved for a defined future phase once operators trust the fundamentals.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-badge">Now</div>
+            <div class="timeline-content">
+              <h3>Core Integrity Platform</h3>
+              <ul>
+                <li>Well & annulus registry</li>
+                <li>MAASP & utilisation calculations</li>
+                <li>Annulus status (GREEN/AMBER/RED)</li>
+                <li>Task creation & reminders</li>
+                <li>API-first backend for integration</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge">Next</div>
+            <div class="timeline-content">
+              <h3>D3-Based Well Schematic</h3>
+              <ul>
+                <li>Interactive vertical schematics</li>
+                <li>Barrier envelopes & leak paths</li>
+                <li>Pressure/temperature overlay</li>
+                <li>Export to PDF/PNG for reports</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge">Future</div>
+            <div class="timeline-content">
+              <h3>AI/ML Predictive Integrity (Future State)</h3>
+              <ul>
+                <li>Annulus pressure escalation prediction</li>
+                <li>Casing & tubing failure probability</li>
+                <li>Optimised test frequencies & workovers</li>
+                <li>Natural language “Integrity Copilot” assistant</li>
+              </ul>
+              <p class="small-text">
+                These capabilities will be introduced cautiously, keeping traceability and deterministic
+                calculations at the core of the system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== PRICING SECTION =================== -->
+    <section id="pricing" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>Commercial Model</h2>
+          <p>
+            Simple, transparent pricing. Start small with a pilot, then scale across your asset.
+            Actual numbers are placeholders – you can tune them later.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Pilot</h3>
+            <p class="pricing-price">Up to 25 wells</p>
+            <ul>
+              <li>Core MAASP & annulus engine</li>
+              <li>Well integrity dashboard</li>
+              <li>Single asset / business unit</li>
+              <li>Email support</li>
+            </ul>
+            <a href="#contact" class="btn-primary btn-full">Schedule Pilot</a>
+          </div>
+
+          <div class="pricing-card pricing-card-highlight">
+            <h3>Enterprise</h3>
+            <p class="pricing-price">Asset-wide deployment</p>
+            <ul>
+              <li>Unlimited wells per tenant</li>
+              <li>D3-based schematics (when released)</li>
+              <li>API access & SSO</li>
+              <li>Onboarding & training package</li>
+            </ul>
+            <a href="#contact" class="btn-primary btn-full">Talk to Sales</a>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Service Company Partner</h3>
+            <p class="pricing-price">OEM / white label</p>
+            <ul>
+              <li>Use DeepGuard in your integrity workflows</li>
+              <li>White-label option</li>
+              <li>Multi-operator tenant support</li>
+              <li>Technical partnership</li>
+            </ul>
+            <a href="#contact" class="btn-secondary btn-full">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CONTACT SECTION =================== -->
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2>Request a Demo</h2>
+          <p>
+            Interested in running DeepGuard on a subset of your wells or integrating it into your existing WIMS?
+            Leave your details and your typical integrity challenges.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contact-form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Operator / Service Company" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Key integrity challenges</label>
+              <textarea id="message" name="message" rows="4" placeholder="SAP wells, barrier tracking, MAASP governance, reporting, etc."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Submit</button>
+            <p class="small-text" id="contact-status"></p>
+          </form>
+
+          <div class="contact-side">
+            <h3>What to expect</h3>
+            <ul>
+              <li>A walkthrough of the MAASP & annulus engine</li>
+              <li>Example well integrity dashboard</li>
+              <li>Discussion of integration (SCADA, PI, CMMS)</li>
+              <li>Joint roadmap planning (AI/ML, schematics, governance)</li>
+            </ul>
+            <p class="small-text">
+              This form is currently client-side only. Hook it up to your email / CRM / ticketing system
+              when you deploy to production.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="logo-mark">DG</span>
+        <span class="footer-title">DeepGuard Well Integrity</span>
+        <span class="footer-tagline">Deterministic first. AI-ready by design.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#product">Platform</a>
+        <a href="#diagrams">Well Diagrams</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
